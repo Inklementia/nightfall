@@ -1,5 +1,5 @@
 # Nightfall
-Coursework for DameDev module
+Coursework for GameDev module
 
 ## 2D Pixel Platformer 
 - [x] Self-made assets
