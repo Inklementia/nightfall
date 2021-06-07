@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - MovingPlatform
+  - Soul
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Environment
+  - Moving
+  - Damageable
+  - Dead
+  - Player
+  - DeathZone
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1519904085
+    locked: 0
+  - name: Decorations
+    uniqueID: 3467785737
+    locked: 0
+  - name: Foreground
+    uniqueID: 4137117729
+    locked: 0
+  - name: Particles
+    uniqueID: 1170620805
+    locked: 0
+  - name: Platforms
+    uniqueID: 767009021
+    locked: 0
+  - name: Decorations2
+    uniqueID: 3222767981
+    locked: 0
+  - name: Enemy
+    uniqueID: 3320933923
+    locked: 0
+  - name: Player
+    uniqueID: 3064225825
+    locked: 0
+  - name: Beforeground
+    uniqueID: 1441948797
+    locked: 0
+  - name: UI
+    uniqueID: 106051029
+    locked: 0

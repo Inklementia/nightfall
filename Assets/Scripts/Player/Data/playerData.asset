@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b7d50b678ad544b9d15db2916f0ad7, type: 3}
+  m_Name: playerData
+  m_EditorClassIdentifier: 
+  MaxHealth: 100
+  InitialHealth: 50
+  MovementVelocity: 10
+  JumpVelocity: 15
+  amountOfJumps: 2
+  WallJumpVelocity: 20
+  WallJumpTime: 0.4
+  WallJumpAngle: {x: 1, y: 2}
+  coyoteTime: 0.1
+  variableJumpHeightMultiplier: 0.5
+  WallSlideVelocity: 1
+  WallClimbVelocity: 3
+  StartOffset: {x: 0.4, y: 0.4}
+  StopOffset: {x: 0.5, y: 1}
+  DashCooldown: 0.5
+  MaxHoldTime: 0.5
+  HoldTimeScale: 0.1
+  DashTime: 0.2
+  DashVelocity: 40
+  Drag: 10
+  DashEndYMultiplier: 0
+  DistanceBetweenAfterImages: 0.5
+  DamageAmount: 15
+  StunDamageAmount: 1
+  AttackCooldown: 0
+  AttackDrag: 5
+  KnockbackVelocity: 10
+  KnockbackDuration: 0.1
+  DeathChunkParticles: {fileID: 6542404241915230187, guid: c6d8920b05a7e464d8ed1be843679f99,
+    type: 3}
+  DeathBloodParticles: {fileID: 6364371951195267985, guid: a95a2eb039c9d2846be0a4cf90946497,
+    type: 3}
+  HitParticles: {fileID: 4065565428653188450, guid: 92b4937fa90babf4ab4fa9cc38c5724a,
+    type: 3}
+  BloodSplash: {fileID: 8166263479720795170, guid: c4f8648672ccbfa40a3b61e2d6d00057,
+    type: 3}
+  GroundCheckRadius: 0.3
+  WallCheckDistance: 0.6
+  AttackHitboxRadius: 1.4
+  WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
+  WhatIsDamageable:
+    serializedVersion: 2
+    m_Bits: 2048
