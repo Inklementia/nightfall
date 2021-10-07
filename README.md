@@ -19,4 +19,4 @@ Coursework for GameDev module
   <li>How to draw assets, sprite sheets, tilmaps, to do animation, music, sound effects and many more</li>
 </ul>
 
-Download .zip game build at <a href="https://disk.yandex.com/d/fShXKh9t45h5QQ" target="_blank">Yandex Disk</a>. (Open .exe file)
+Download .rar game build at <a href="https://disk.yandex.com/d/fShXKh9t45h5QQ" target="_blank">Yandex Disk</a>. (Open .exe file)
