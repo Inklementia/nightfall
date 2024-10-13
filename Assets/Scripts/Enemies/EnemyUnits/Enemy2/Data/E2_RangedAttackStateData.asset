@@ -15,7 +15,7 @@ MonoBehaviour:
   _projectile: {fileID: 3387783845541814246, guid: efe953501a180e34fa7b4cb60ee79331,
     type: 3}
   _projectileDamage: 5
-  _projectileSpeed: 12
+  _projectileSpeed: 15
   _knockbackAngle: {x: 5, y: 2}
   _knockbackVeclocity: 10
   _projectileTravelDistance: 8

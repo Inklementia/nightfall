@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: E1_MeleeAttackData
   m_EditorClassIdentifier: 
   _attackRadius: 0.7
-  _attackDamage: 8
+  _attackDamage: 5
   _knockbackAngle: {x: 0.8944272, y: 0.4472136}
   _knockbackVeclocity: 20
   _whatIsPlayer:

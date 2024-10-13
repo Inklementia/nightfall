@@ -6,17 +6,20 @@ using UnityEngine.UI;
 public class SettingsMenu : MonoBehaviour
 {
     [SerializeField] AudioMixer _audioMixer;
+    [SerializeField] AudioMixerGroup _audioMixerBg;
     [SerializeField] Toggle _isFullScreenToggle;
     [SerializeField] Toggle _isStandardResToggle;
     [SerializeField] Toggle _isMediumResToggle;
-    private float originalBgVolume;
+    [SerializeField] private Slider BgSlider;
+    private float _originalBgVolume;
     private bool _isFullScreen;
     private float _currentResolutionWidth;
     private float _currentResolutionHeight;
+    private bool _isBGOff = false;
 
     private void Start()
     {
-        _audioMixer.GetFloat("BgVolume", out originalBgVolume);
+        _audioMixer.GetFloat("BgVolume", out _originalBgVolume);
         _isFullScreen = Screen.fullScreen;
         _isFullScreenToggle.isOn = _isFullScreen;
 
@@ -30,6 +33,7 @@ public class SettingsMenu : MonoBehaviour
             _isMediumResToggle.isOn = true;
         }
         print(Screen.currentResolution.width);
+        
     }
 
     // called from canvas
@@ -42,7 +46,7 @@ public class SettingsMenu : MonoBehaviour
     // for music
     public void SetBgVolume(float volume)
     {
-        _audioMixer.SetFloat("BgVolume", volume);
+        if(!_isBGOff) _audioMixerBg.audioMixer.SetFloat("BgVolume", volume);
     }
 
     public void SetFullScreen(bool isFullScreen)
@@ -54,14 +58,18 @@ public class SettingsMenu : MonoBehaviour
     // to turn off bg music
     public void SetBgMusic(bool isBgOff)
     {
+        _isBGOff = isBgOff;
         //float originalVolume = _audioMixer.GetFloat("BgVolume");
         if (isBgOff)
         {
-            _audioMixer.SetFloat("BgVolume", -80f);
+            _audioMixerBg.audioMixer.GetFloat("BgVolume", out _originalBgVolume);
+            BgSlider.interactable = false;
+            _audioMixerBg.audioMixer.SetFloat("BgVolume", -80f);
         }
         else
         {
-            _audioMixer.SetFloat("BgVolume", originalBgVolume);
+            BgSlider.interactable = true;
+            _audioMixerBg.audioMixer.SetFloat("BgVolume", _originalBgVolume);
         }
        
     }
